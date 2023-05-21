@@ -37,13 +37,6 @@ public class Task {
     @Column(name = "due_date")
     private LocalDate dueDate;
 
-    @CreationTimestamp
-    @Column(updatable = false, name = "created_at")
-    private LocalDate createdAt;
-
-    @UpdateTimestamp
-    @Column(name = "updated_at")
-    private LocalDate updatedAt;
 
 
     public enum TaskStatusEnum {
